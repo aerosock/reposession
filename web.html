@@ -10,12 +10,14 @@
             padding: 0;
             background-color: bisque;
         }
+        
         h1 {
             color: yellowgreen;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 45px;
             position: relative;
         }
+
         .buttonNejlepsiTym {
             color: bisque;
             font-family: Arial, Helvetica, sans-serif;
@@ -24,10 +26,11 @@
             width: 150px;
             height: 75px;
         }
+
         .buttonNejlepsiTym:hover {
             color:crimson;
-            
         }
+
         .buttonDownload {
             color: bisque;
             font-family: Arial, Helvetica, sans-serif;
@@ -36,8 +39,9 @@
             width: 150px;
             height: 75px;
         }
+
         .buttonDownload:hover {
-            color:crimson;
+            color: cyan;
             
         }
     </style>
@@ -52,15 +56,14 @@
         const buttonNejlepsiTym = document.querySelector(".buttonNejlepsiTym")
         const buttonDownload = document.querySelector(".buttonDownload")
         const text = document.querySelector(".text")
+        const githubUrl = "https://github.com/knotknowwhy/best-github-repo-ever.git";
 
         let pressed = false
-        
+
         buttonNejlepsiTym.addEventListener("click", nejlepsiTym)
         buttonDownload.addEventListener("click", Download)
 
         const tymy = ["Tym1", "Tym2", "Tym3", "Tym4", "Tym5"]
-
-        const githubUrl = "https://github.com/knotknowwhy/best-github-repo-ever.git";
 
         function nejlepsiTym() {
             if (pressed === false){
@@ -72,10 +75,10 @@
             text.textContent = tymy[randomTym]
             pressed = false
         }
+    }
 
         function Download() {
-            
-        }
+        window.open(githubUrl, "_blank")
         }
     </script>
 </body>
