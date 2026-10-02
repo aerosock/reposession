@@ -54,9 +54,13 @@
         const text = document.querySelector(".text")
 
         let pressed = false
+        
         buttonNejlepsiTym.addEventListener("click", nejlepsiTym)
+        buttonDownload.addEventListener("click", Download)
 
         const tymy = ["Tym1", "Tym2", "Tym3", "Tym4", "Tym5"]
+
+        const githubUrl = "https://github.com/knotknowwhy/best-github-repo-ever.git";
 
         function nejlepsiTym() {
             if (pressed === false){
@@ -67,6 +71,10 @@
             const randomTym = Math.floor(Math.random()*tymy.length)
             text.textContent = tymy[randomTym]
             pressed = false
+        }
+
+        function Download() {
+            
         }
         }
     </script>
