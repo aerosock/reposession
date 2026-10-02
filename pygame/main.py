@@ -33,23 +33,19 @@ class Main:
                     pygame.quit()
                     sys.exit()
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_a:
-                        self.movement[0] = True
-                        self.say_kraa = True
-                    if event.key == pygame.K_d:
-                        self.movement[1] = True
-                        self.say_kraa = True
-                    if event.key == pygame.K_SPACE: self.jump = True
+                    if event.key == pygame.K_a: self.movement[0] = True
+                    if event.key == pygame.K_d: self.movement[1] = True
+                    if event.key == pygame.K_SPACE:self.jump = True
                 if event.type == pygame.KEYUP:
-                    if event.key == pygame.K_a:
-                        self.movement[0] = False
-                        self.say_kraa = False
-                    if event.key == pygame.K_d:
-                        self.movement[1] = False
-                        self.say_kraa = False
+                    self.say_kraa = False
+                    if event.key == pygame.K_a: self.movement[0] = False
+                    if event.key == pygame.K_d: self.movement[1] = False
                     if event.key == pygame.K_SPACE: self.jump = False
 
             self.player.update(self.movement, self.jump)
+
+            if self.movement[0] or self.movement[1] or self.jump:
+                self.say_kraa = True
 
             self.screen.fill((36, 137, 178))
             pygame.draw.rect(self.screen, (149, 86, 59), (0, 300, 800, 300))
