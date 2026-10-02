@@ -2,6 +2,7 @@
 
 ## Instrukce
 
+- Stahnout program
 - Spustit program main.py
 - Využívat tlačítka A, D pro pohyb doleva a do prava
 - Tlačítko Space pro jump
