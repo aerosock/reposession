@@ -2,13 +2,13 @@
 
 ## Instrukce
 
-- Spustit main.py
-- Využívat a, d pro pohyb doleva a do prava
-- Space pro jump
+- Spustit program main.py
+- Využívat tlačítka A, D pro pohyb doleva a do prava
+- Tlačítko Space pro jump
 
-*Poznámka:*
+*Poznámka: program musí být spouštěn ze složky pygame*
 
-**asdafbxb**
+**super duper duleziata vec**
 
 ### Ukázka kódu
 
